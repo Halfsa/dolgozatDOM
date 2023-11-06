@@ -53,9 +53,6 @@ function The() {
       const lista = document.createElement("li");
       const p = document.createElement('p');
       var szovi = quote.quote;
-      if (szovi.toLowerCase().includes("the")) {
-       
-      }
       var aokcoska = szovi.replace(" the "," <b>the</b> ")
       p.innerHTML = aokcoska.replace(" The "," <b>The</b> ");
       
