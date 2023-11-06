@@ -54,14 +54,11 @@ function The() {
       const p = document.createElement('p');
       var szovi = quote.quote;
       if (szovi.toLowerCase().includes("the")) {
-        const b = document.createElement('b');
-        var mama = szovi.split(' ');
-        const text = document.createTextNode(mama[mama.indexOf("the")]);
-       b.appendChild(text);
-       szovi.replace("the",("the".bold()));
+       
       }
-      const szoveg = document.createTextNode(szovi.replace("the","<b>the</b>"));
-      p.appendChild(szoveg);
+      var aokcoska = szovi.replace(" the "," <b>the</b> ")
+      p.innerHTML = aokcoska.replace(" The "," <b>The</b> ");
+      
       lista.appendChild(p);
       ol.appendChild(lista);
     });
