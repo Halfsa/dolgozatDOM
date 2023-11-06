@@ -54,7 +54,7 @@ function The() {
       const p = document.createElement('p');
       var szovi = quote.quote;
       var aokcoska = szovi.replace(" the "," <b>the</b> ")
-      p.innerHTML = aokcoska.replace(" The "," <b>The</b> ");
+      p.innerHTML = aokcoska.replace("The "," <b>The</b> ");
       
       lista.appendChild(p);
       ol.appendChild(lista);
